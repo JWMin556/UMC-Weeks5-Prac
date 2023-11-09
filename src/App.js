@@ -6,6 +6,7 @@ import Celebrity from "./pages/Celebrity";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import MovieDetail from "./pages/MovieDetail";
+import LoginControl from "./pages/LoginControl";
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
           <Route path="/movie/:title" element={<MovieDetail />} />
           <Route path="/tv" element={<Tv />} />
           <Route path="/person" element={<Celebrity />} />
+          <Route path="/longin" element={<LoginControl />}/>
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
 
     </div>
   );
+  
 }
 
 export default App;
