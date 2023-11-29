@@ -19,7 +19,7 @@ function App() {
           <Route path="/movie/:title" element={<MovieDetail />} />
           <Route path="/tv" element={<Tv />} />
           <Route path="/person" element={<Celebrity />} />
-          <Route path="/longin" element={<LoginControl />}/>
+          <Route path="/login" element={<LoginControl />}/>
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

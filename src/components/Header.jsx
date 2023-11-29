@@ -38,18 +38,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              {/* 상태에 따라 다른 텍스트와 이벤트 핸들러를 적용합니다. */}
-              {isLoggedIn ? (
-                <button className="rounded-button" onClick={toggleLogin}>로그아웃</button>
-              ) : (
-                <button className="rounded-button" onClick={toggleLogin}>로그인</button>
-              )}
-              {/* 상태에 따라 다른 메시지를 출력합니다. */}
-              {isLoggedIn ? (
-                <span style={{color: 'white'}}>  환영합니다!  </span>
-              ) : (
-                <span style={{color: 'white'}}>  로그인 해주세요!  </span>
-              )}
+              <Link className="header-nav-item" to='/login'>
+                로그인
+              </Link>
             </li>
           </ul>
         </div>
