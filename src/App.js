@@ -1,11 +1,12 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
-import Tv from "./pages/Tv";
+import Tvs from "./pages/Tvs";
 import Celebrity from "./pages/Celebrity";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import MovieDetail from "./pages/MovieDetail";
+import TvDetail from "./pages/TvDetail";
 import LoginControl from "./pages/LoginControl";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movie" element={<Movies />} />
           <Route path="/movie/:title" element={<MovieDetail />} />
-          <Route path="/tv" element={<Tv />} />
+          <Route path="/tv" element={<Tvs />} />
+          <Route path="/tv/:title" element={<TvDetail />} />
+          <Route path="/tv/:title" element={<MovieDetail />} />
           <Route path="/person" element={<Celebrity />} />
           <Route path="/login" element={<LoginControl />}/>
           <Route path="/*" element={<NotFound />} />
